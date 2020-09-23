@@ -1,0 +1,51 @@
+.statistics {
+  background-image: linear-gradient(
+      rgba($color-primary, 0.8),
+      rgba($color-primary, 0.8)
+    ),
+    url("../img/work-background.jpg");
+  background-size: cover;
+  background-position: bottom;
+  grid-column: full-start / full-end;
+  padding: 5rem 24rem;
+
+  @media only screen and (max-width: $bp-desktop) {
+    padding: 5rem 20rem;
+  }
+
+  @media only screen and (max-width: $bp-laptop) {
+    padding: 5rem 24rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 5rem 11rem;
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+  }
+
+  &__content {
+    text-align: center;
+
+    @media only screen and (max-width: $bp-small) {
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__icon {
+    height: 5rem;
+    width: 5rem;
+    fill: $color-white;
+  }
+
+  &__value {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: $color-secondary;
+  }
+}

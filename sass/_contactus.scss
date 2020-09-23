@@ -1,0 +1,81 @@
+.contactus {
+  background-color: $color-gray-dark-2;
+  grid-column: full-start / full-end;
+
+  @media only screen and (max-width: $bp-desktop) {
+    padding: 9rem 16rem;
+  }
+
+  @media only screen and (max-width: $bp-laptop) {
+    padding: 9rem 22rem;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    padding: 9rem 16.5rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 9rem 11.5rem;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+
+    @media only screen and (max-width: $bp-small) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .input__el {
+    font-family: inherit;
+    padding: 1rem;
+    font-size: 1.6rem;
+    margin: 2rem 2rem 2rem 0;
+    color: $color-gray-dark-1;
+    border: 1px solid $color-gray-dark-2;
+    outline: none;
+
+    &--large {
+      resize: none;
+      grid-column: 1 / -1;
+      height: 15rem;
+    }
+  }
+
+  &__btn {
+    justify-self: start;
+  }
+
+  &__address {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__detail {
+    margin: 2rem 1rem;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    color: $color-gray-dark-1;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__icon {
+    margin: 1rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: $color-secondary;
+  }
+}

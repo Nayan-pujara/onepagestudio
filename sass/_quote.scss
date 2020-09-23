@@ -1,0 +1,34 @@
+.quote {
+  background-image: linear-gradient(
+      rgba($color-primary, 0.8),
+      rgba($color-primary, 0.8)
+    ),
+    url("../img/work-background.jpg");
+  background-size: cover;
+  background-position: center;
+  grid-column: full-start / full-end;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media only screen and (max-width: $bp-desktop) {
+    padding: 6rem 15rem;
+  }
+
+  @media only screen and (max-width: $bp-laptop) {
+    padding: 6rem 18rem;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    padding: 6rem 15rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 6rem 11rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+  }
+}

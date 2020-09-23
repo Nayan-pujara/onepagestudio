@@ -1,0 +1,67 @@
+// COLORS
+$color-primary: #011955;
+$color-secondary: #ff821c;
+$color-white: #fff;
+
+$color-gray-dark-1: #676767;
+$color-gray-dark-2: #f2f2f2;
+
+// RESPONSICE BREAKPOINTS
+$bp-desktop: 125em; //2000px;
+$bp-laptop: 85.375em; //1366px;
+$bp-largest: 75em; //1200px;
+$bp-large: 62.5em; //1000px;
+$bp-medium: 50em; //800px;
+$bp-small: 43.75em; //600px;
+$bp-smallest: 31.25em; //500px;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // This is define 1 rem
+  // 1 rem = 10px; 10px/16px = 62.5%
+  box-sizing: border-box;
+
+  @media only screen and (max-width: $bp-desktop) {
+    font-size: 100%;
+  }
+
+  @media only screen and (max-width: $bp-laptop) {
+    font-size: 62.5%;
+  }
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 55%;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 40%;
+  }
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 100vh repeat(10, min-content);
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr) [center-start] repeat(
+      8,
+      [col-start] minmax(min-content, 14rem) [col-end]
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
+}

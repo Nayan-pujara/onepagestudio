@@ -1,0 +1,31 @@
+.vision {
+  grid-column: center-start / center-end;
+  display: flex;
+  margin: -12rem 5.5rem 10rem 5.5rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+
+  @media only screen and (max-width: $bp-medium) {
+    margin: -12rem 3rem 5rem 2rem;
+  }
+
+  &__content-group {
+    background-color: $color-gray-dark-2;
+  }
+
+  &__content {
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__icon {
+    height: 3.5rem;
+    width: 3.5rem;
+    fill: $color-secondary;
+  }
+
+  .mission__content-group {
+    background-color: $color-white;
+  }
+}

@@ -1,0 +1,23 @@
+.margin-bottom--very-small {
+  margin-bottom: 1rem;
+}
+
+.margin-bottom--small {
+  margin-bottom: 3rem;
+}
+
+.margin-right--small {
+  margin-right: 6rem;
+
+  @media only screen and (max-width: $bp-small) {
+    margin-top: 3rem;
+  }
+}
+
+.margin-minus--small {
+  margin-top: -1rem;
+}
+
+.text-center {
+  text-align: center;
+}

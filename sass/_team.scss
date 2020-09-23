@@ -1,0 +1,20 @@
+.team {
+  grid-column: center-start / center-end;
+  padding: 6.5rem;
+
+  @media only screen and (max-width: $bp-large) {
+    padding: 7.5rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 3.5rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+  }
+}

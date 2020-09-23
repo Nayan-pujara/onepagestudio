@@ -1,0 +1,60 @@
+.header {
+  background-image: linear-gradient(
+      rgba($color-primary, 0.8),
+      rgba($color-primary, 0.8)
+    ),
+    url("../img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  grid-column: full-start / full-end;
+  justify-items: center;
+
+  &__nav {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+    }
+
+    .user-nav {
+      margin-left: 5rem;
+      padding-top: 1rem;
+      &__link {
+        font-size: 1.2rem;
+        padding: 1rem;
+        text-decoration: none;
+        color: $color-white;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__text {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: $color-secondary;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+  }
+
+  &__subtext {
+    font-size: 1.3rem;
+    color: $color-white;
+    text-align: center;
+  }
+}

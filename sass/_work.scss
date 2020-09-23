@@ -1,0 +1,98 @@
+.work-section-1 {
+  grid-column: center-start / center-end;
+  padding: 5rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 5rem 1rem;
+  }
+}
+
+.work {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-right: 5rem;
+    }
+  }
+
+  &__content-group {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img-group {
+    flex: 0 0 30%;
+
+    margin-bottom: 3rem;
+  }
+
+  &__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__nav {
+    text-align: center;
+
+    &--left {
+      text-align: left;
+
+      @media only screen and (max-width: $bp-small) {
+        text-align: center;
+      }
+    }
+  }
+
+  &__icon {
+    font-size: 1.6rem;
+    height: 3.5rem;
+    width: 4rem;
+    margin-left: -1rem;
+
+    &--gray {
+      fill: $color-gray-dark-1;
+    }
+
+    &--orange {
+      fill: $color-secondary;
+    }
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    color: $color-white;
+  }
+}
+
+.work-section-2 {
+  background-image: linear-gradient(
+      rgba($color-primary, 0.8),
+      rgba($color-primary, 0.8)
+    ),
+    url("../img/work-background.jpg");
+  background-size: cover;
+  background-position: center;
+  grid-column: full-start / full-end;
+
+  @media only screen and (max-width: $bp-desktop) {
+    padding: 5rem 12rem 16rem 12rem;
+  }
+
+  @media only screen and (max-width: $bp-laptop) {
+    padding: 5rem 19rem 16rem 19rem;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    padding: 5rem 13rem 16rem 13rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 5rem 8rem 16rem 8rem;
+  }
+}
