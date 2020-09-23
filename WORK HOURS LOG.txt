@@ -11,3 +11,5 @@ TESTIMONIALS		    1.5H
 STATISTICS		      45MIN
 CONTACT US	      	1.5H
 FOOTER		        	30MIN
+
+Note:- Please open index file with live server because the icon used in this website will only appear on server.
